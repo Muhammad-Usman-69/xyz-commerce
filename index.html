@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="side/style.css" rel="stylesheet">
+    <link rel="shortcut icon" href="images/logo.jfif" type="image/x-icon">
+    <title>XYZ - Ecommerce Pakistan</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+
+<body class="open-sans">
+    <!-- header -->
+    <header>
+        <nav class="grid grid-cols-[80px_1fr] justify-between items-center">
+            <div class="h-full grid place-items-center pl-5 py-2">
+                <a href="/" class="flex items-center">
+                    <img src="images/logo-bg.png" class="w-14" alt="">
+                    <span>XYZ</span>
+                </a>
+            </div>
+            <div class="flex space-x-4 justify-end pr-5 py-2">
+                <a class="after:content-[''] after:block after:border-b-blue-600 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
+                    href="">About</a>
+                <a class="after:content-[''] after:block after:border-b-blue-600 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
+                    href="">Contact</a>
+                <a class="after:content-[''] after:block after:border-b-blue-600 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
+                    href="">FAQs</a>
+            </div>
+            <div class="col-span-2 bg-blue-600">
+                <form action="" class="flex items-center justify-center py-2 rounded-sm text-sm">
+                    <input type="search" name="q" id="q" placeholder="Search anything you like..."
+                        class="outline-none border-none px-2 py-2 w-48 placeholder:italic" autocomplete="off">
+                    <input type="submit" value="Search" class="bg-yellow-400 px-2 py-2 active:bg-yellow-500">
+                </form>
+            </div>
+        </nav>
+    </header>
+    <!-- categories -->
+    <div class="flex overflow-x-scroll no-scrollbar bg-blue-900">
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Gaming</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Groceries</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Chairs</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Desk</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Clothes</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">RAM</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Network</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Moniter</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Bags</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Bulbs</a>
+        <a href="/"
+            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Handkerchief</a>
+    </div>
+    <!-- carousel -->
+    <div id="carousel" class="carousel slide p-2" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="8000">
+                <img src="images/carousel/pg1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="8000">
+                <img src="images/carousel/pg2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item" data-bs-interval="8000">
+                <img src="images/carousel/pg3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <script src="side/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
