@@ -8,7 +8,7 @@ const scrollAmount = scrollCont.scrollWidth - scrollCont.offsetWidth;
 let currentPosition = 0;
 
 //initializing for speed of scroll
-let speed = 5;
+let speed = 4;
 
 //initalizing for interval
 let interval;
