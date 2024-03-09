@@ -43,37 +43,48 @@
         </nav>
     </header>
     <!-- categories -->
-    <div class="flex overflow-x-scroll no-scrollbar bg-blue-900">
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Gaming</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Groceries</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Chairs</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Desk</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Clothes</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">RAM</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Network</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Moniter</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Bags</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Bulbs</a>
-        <a href="/"
-            class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Handkerchief</a>
+    <div class="flex overflow-x-scroll scroll-smooth no-scrollbar bg-blue-900 relative scroll-container">
+        <div class="min-w-7" onmousedown="scrollLeftNav(1)" onmouseup="scrollLeftNav(0)">
+            <img src="images/left-arrow.png"
+                class="h-9 fixed left-0 bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r cursor-pointer p-1">
+        </div>
+        <div class="flex">
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Gaming</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Groceries</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Chairs</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Desk</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Clothes</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">RAM</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Network</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Moniter</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Bags</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Bulbs</a>
+            <a href="/"
+                class="p-2 text-sm text-white bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-r last:border-r-0">Handkerchief</a>
+        </div>
+        <div class="min-w-7" onmousedown="scrollRightNav(1)" onmouseup="scrollRightNav(0)">
+            <img src="images/right-arrow.png"
+                class="h-9 fixed right-0 bg-blue-900 transition-all duration-200 hover:bg-cyan-500 border-gray-700 border-l cursor-pointer p-1">
+        </div>
     </div>
     <!-- carousel -->
     <div id="carousel" class="carousel slide p-2" data-bs-ride="carousel">
         <div class="carousel-indicators">
-            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true"
+                aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          </div>
+        </div>
         <div class="carousel-inner">
             <div class="carousel-item active" data-bs-interval="8000">
                 <img src="images/carousel/pg1.jpg" class="d-block w-100" alt="...">
@@ -85,18 +96,16 @@
                 <img src="images/carousel/pg3.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carousel"
-            data-bs-slide="prev">
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
         </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carousel"
-            data-bs-slide="next">
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    
+
     <script src="side/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
