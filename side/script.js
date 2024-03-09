@@ -63,3 +63,22 @@ function scroller() {
     //changing position
     scrollCont.scrollLeft = currentPosition;
 }
+
+//taking nav
+let nav = document.querySelector("nav");
+//taking footer
+let footer = document.querySelector("footer");
+window.addEventListener("scroll", () => {
+    //changing nav position
+    if (window.scrollY > nav.clientHeight) {
+        nav.classList.add("sticky");
+    } else {
+        nav.classList.remove("sticky");
+    };
+    //if scroll has reached footer
+    if (window.scrollY >= (document.body.clientHeight - (nav.clientHeight + footer.clientHeight))) {
+        nav.style.transform = "translateY(-100%)";
+    } else {
+        nav.style.transform = "translateY(0%)"
+    }
+})

@@ -15,32 +15,44 @@
 
 <body class="open-sans bg-gray-50">
     <!-- header -->
-    <header>
-        <nav class="grid grid-cols-[80px_1fr] justify-between items-center">
+    <header class="">
+        <nav class="bg-white max-h-31 w-full z-10 grid grid-cols-[130px_1fr] justify-between items-center transition-all duration-300">
+            <!-- main -->
             <div class="h-full grid place-items-center pl-5 py-2">
-                <a href="/" class="flex items-center">
-                    <img src="images/logo-bg.png" class="w-14">
+                <a href="/" class="flex items-center space-x-1 w-full">
+                    <img src="images/logo-bg.png" class="w-14 rounded-full">
                     <span>XYZ</span>
                 </a>
             </div>
+            <!-- side pages -->
             <div class="flex space-x-4 justify-end pr-5 py-2">
-                <a class="after:content-[''] after:block after:border-b-blue-600 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
+                <a class="after:content-[''] after:block after:border-b-blue-900 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
                     href="">About</a>
-                <a class="after:content-[''] after:block after:border-b-blue-600 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
+                <a class="after:content-[''] after:block after:border-b-blue-900 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
                     href="">Contact</a>
-                <a class="after:content-[''] after:block after:border-b-blue-600 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
+                <a class="after:content-[''] after:block after:border-b-blue-900 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
                     href="">FAQs</a>
             </div>
-            <div class="col-span-2 bg-blue-600">
+            <div class="col-span-2 bg-blue-950 flex justify-center items-center space-x-4">
+                <!-- search -->
                 <form action="" class="flex items-center justify-center py-2 rounded-sm text-sm">
                     <input type="search" name="q" id="q" placeholder="Search anything you like..."
-                        class="outline-none border-none px-2 py-2 w-48 placeholder:italic" autocomplete="off">
+                        class="outline-none text-black border-none px-2 py-2 w-48 placeholder:italic"
+                        autocomplete="off">
                     <input type="submit" value="Search"
                         class="bg-yellow-400 cursor-pointer px-2 py-2 hover:bg-yellow-300 active:bg-yellow-500">
                 </form>
+                <!-- account cart -->
+                <a href="/">
+                    <img src="images/shopping-cart.png" class="w-7">
+                </a>
+                <a href="/">
+                    <img src="images/user.png" class="w-7">
+                </a>
             </div>
         </nav>
     </header>
+    <hr>
     <!-- categories -->
     <div class="flex overflow-x-scroll scroll-smooth no-scrollbar bg-blue-900 relative">
         <div class="min-w-7" onmousedown="scrollLeftNav(1)" onmouseup="scrollLeftNav(0)">
@@ -280,10 +292,10 @@
             </div>
         </div>
         <!-- <div class="py-5 grid place-items-center">
-            <button type="button"
-                class="px-12 py-2 rounded-md bg-gradient-to-b border-2 text-yellow-400 from-cyan-900 to-cyan-950 hover:from-cyan-950 hover:to-cyan-900 active:from-blue-950 active:to-blue-900 text-sm">VIEW
-                MORE</button>
-        </div> -->
+        <button type="button"
+            class="px-12 py-2 rounded-md bg-gradient-to-b border-2 text-yellow-400 from-cyan-900 to-cyan-950 hover:from-cyan-950 hover:to-cyan-900 active:from-blue-950 active:to-blue-900 text-sm">VIEW
+            MORE</button>
+    </div> -->
     </div>
 
     <!-- categories product -->
@@ -432,11 +444,11 @@
                     <i class="fa fa-map-marker text-yellow-400"></i>
                     <span class="text-sm">Shah Rukn E Alam Colony, 60000, Multan,
                         Pakistan</span>
-                    </div>
-                    <div class="flex items-center space-x-2">
-                        <i class="fa fa-phone text-yellow-400"></i>
-                        <span class="text-sm">+923081741428 | +923101281789</span>
-                    </div>
+                </div>
+                <div class="flex items-center space-x-2">
+                    <i class="fa fa-phone text-yellow-400"></i>
+                    <span class="text-sm">+923081741428 | +923101281789</span>
+                </div>
                 <div class="flex items-center space-x-2">
                     <i class="fa fa-envelope-o text-yellow-400"></i>
                     <span class="text-sm">info@xyz.com</span>
