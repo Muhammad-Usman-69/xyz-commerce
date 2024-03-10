@@ -70,7 +70,7 @@ let nav = document.querySelector("nav");
 let footer = document.querySelector("footer");
 window.addEventListener("scroll", () => {
     //changing nav position
-    if (window.scrollY > nav.clientHeight) {
+    if (window.scrollY > (nav.clientHeight * 2)) {
         nav.classList.add("sticky");
     } else {
         nav.classList.remove("sticky");

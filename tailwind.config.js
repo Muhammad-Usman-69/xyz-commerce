@@ -1,6 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["index.html"],
+  content: [
+    "index.html",
+    "product.html"
+    // "side/*.html"
+  ],
   theme: {
     extend: {
       maxHeight: {
