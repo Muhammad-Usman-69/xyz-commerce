@@ -698,21 +698,16 @@ video {
   margin-bottom: 1rem;
 }
 
-.mx-4 {
-  margin-left: 1rem;
-  margin-right: 1rem;
-}
-
 .mr-0 {
   margin-right: 0px;
 }
 
-.mt-auto {
-  margin-top: auto;
-}
-
 .mt-0 {
   margin-top: 0px;
+}
+
+.mt-auto {
+  margin-top: auto;
 }
 
 .block {
@@ -775,12 +770,24 @@ video {
   max-height: 8rem;
 }
 
+.max-h-34 {
+  max-height: 8.5rem;
+}
+
+.max-h-36 {
+  max-height: 9rem;
+}
+
 .max-h-40 {
   max-height: 10rem;
 }
 
 .min-h-32 {
   min-height: 8rem;
+}
+
+.min-h-34 {
+  min-height: 8.5rem;
 }
 
 .min-h-40 {
