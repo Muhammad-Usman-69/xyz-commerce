@@ -1,5 +1,6 @@
 <!doctype html>
-<html class="scroll-smooth">
+<!-- <html class="scroll-smooth"> -->
+<html>
 
 <head>
     <meta charset="UTF-8">
@@ -26,7 +27,7 @@
                 </a>
             </div>
             <!-- side pages -->
-            <div class="flex space-x-4 justify-end pr-5 py-2 md:justify-start md:mx-6">
+            <div class="flex space-x-4 justify-end pr-5 py-2 lg:justify-start lg:mx-6">
                 <a class="after:content-[''] after:block after:border-b-blue-950 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
                     href="">About</a>
                 <a class="after:content-[''] after:block after:border-b-blue-950 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
@@ -103,276 +104,424 @@
     <!-- product title -->
     <p class="mx-6 text-xl font-medium">Apple iPad 9th Generation 10.2″ (Wi-Fi, 64GB) – Space Gray</p>
     <hr class="mx-6 my-4">
-    <!-- product carousel -->
-    <div id="default-carousel" class="relative w-full" data-carousel="slide">
-        <!-- Carousel wrapper -->
-        <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
-            <!-- Item 1 -->
-            <div class="hidden duration-[100000ms] ease-in-out" data-carousel-item>
-                <img src="../product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                    class="absolute block w-72 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-            <!-- Item 2 -->
-            <div class="hidden duration-[100000ms] ease-in-out" data-carousel-item>
-                <img src="../product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                    class="absolute block w-72 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
-            </div>
-        </div>
-        <!-- Slider indicators -->
-        <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
-            <div class="bg-gray-800 rounded-full h-4 w-4 grid place-items-center">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
-                    data-carousel-slide-to="0"></button>
-            </div>
-            <div class="bg-gray-800 rounded-full h-4 w-4 grid place-items-center">
-                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
-                    data-carousel-slide-to="1"></button>
-            </div>
-        </div>
-        <!-- Slider controls -->
-        <button type="button"
-            class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-prev>
-            <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M5 1 1 5l4 4" />
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-        <button type="button"
-            class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
-            data-carousel-next>
-            <span
-                class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none">
-                <svg class="w-4 h-4 text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"
-                    fill="none" viewBox="0 0 6 10">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="m1 9 4-4-4-4" />
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
-    </div>
-    <div class="mx-6 my-6 space-y-5">
-        <!-- price -->
-        <div>
-            <p class="old-price line-through text-sm opacity-70">Rs. 4,500</p>
-            <p class="new-price font-medium text-2xl text-blue-950">Rs. 3,400</p>
-        </div>
-        <!-- rating -->
-        <div class="flex space-x-2 items-center">
-            <h4 class="font-semibold text-sm">Rating:</h4>
-            <div class="flex space-x-1">
-                <img src="images/rate star.png" class="w-5 h-5">
-                <img src="images/rate star.png" class="w-5 h-5">
-                <img src="images/rate star.png" class="w-5 h-5">
-                <img src="images/empty star.png" class="w-5 h-5">
-                <img src="images/empty star.png" class="w-5 h-5">
-            </div>
-            <a href="#reviews" class="underline text-cyan-600">4 reviews</a>
-        </div>
-        <!-- buttons -->
-        <div class="grid grid-cols-2 text-white gap-1">
-            <button class="bg-cyan-400 transition-all hover:bg-cyan-500 active:bg-cyan-900 py-3">Buy Now</button>
-            <button class="bg-red-600 transition-all hover:bg-red-700 active:bg-red-900 py-3">Add To Cart </button>
-        </div>
-        <!-- product category -->
-        <div>
-            <span>Categories:</span>
-            <a href="/" class="text-cyan-600 font-medium underline hover:text-cyan-700">Electronic</a>
-            <a href="/" class="text-cyan-600 font-medium underline hover:text-cyan-700">Ipad</a>
-        </div>
-        <!-- delivery -->
-        <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Delivery</p>
-        <div class="border p-4 space-y-5">
-            <div class="text-sm space-y-2">
-                <h4 class="font-semibold"><i class="fa fa-truck text-red-800"></i> Delivery Charges:</h4>
-                <div class="space-y-1">
-                    <p>Rs. 400 (Within Multan)</p>
-                    <p>Rs. 700 (Other Cities)</p>
+    <div class="lg:grid lg:grid-cols-3 xl:grid-cols-4 lg:grid-rows-[385px_1fr]">
+        <!-- product carousel -->
+        <div id="default-carousel" class="relative w-full" data-carousel="slide">
+            <!-- Carousel wrapper -->
+            <div class="relative h-96 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-[100000ms] ease-in-out" data-carousel-item>
+                    <img src="../product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                        class="absolute block w-72 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-[100000ms] ease-in-out" data-carousel-item>
+                    <img src="../product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                        class="absolute block w-72 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
                 </div>
             </div>
-            <hr>
-            <div class="text-sm space-y-2">
-                <h4 class="font-semibold"><i class="fa fa-wallet text-amber-950"></i> Payment Methods:</h4>
-                <div class="space-y-1">
-                    <p>JazzCash</p>
-                    <p>EasyPaisa</p>
-                    <p>PayPak</p>
-                    <p>Cash On Delivery</p>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+                <div class="bg-gray-800 rounded-full h-4 w-4 grid place-items-center">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                        data-carousel-slide-to="0"></button>
+                </div>
+                <div class="bg-gray-800 rounded-full h-4 w-4 grid place-items-center">
+                    <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                        data-carousel-slide-to="1"></button>
                 </div>
             </div>
-            <hr>
-            <div class="text-sm space-y-2">
-                <h4 class="font-semibold"><i class="fa fa-thumbs-up text-green-700"></i> Our Advantages:</h4>
-                <div class="space-y-1">
-                    <p>100% Genuine Guaranteed Products</p>
-                    <p>Warranty Policy</p>
-                    <p>Different payment methods</p>
-                    <p>Best price</p>
-                </div>
-            </div>
+            <!-- Slider controls -->
+            <button type="button"
+                class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-prev>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M5 1 1 5l4 4" />
+                    </svg>
+                    <span class="sr-only">Previous</span>
+                </span>
+            </button>
+            <button type="button"
+                class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none"
+                data-carousel-next>
+                <span
+                    class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none">
+                    <svg class="w-4 h-4 text-gray-800 rtl:rotate-180" aria-hidden="true"
+                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="m1 9 4-4-4-4" />
+                    </svg>
+                    <span class="sr-only">Next</span>
+                </span>
+            </button>
         </div>
-        <!-- product information -->
-        <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">More Information</p>
-        <table class="space-y-2 w-full">
-            <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
-                <th class="text-right font-semibold p-3 border-r">Product Code</td>
-                <td class="text-left p-3">12874619</td>
-            </tr>
-            <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
-                <th class="text-right font-semibold p-3 border-r">Brand</td>
-                <td class="text-left p-3">Apple</td>
-            </tr>
-            <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
-                <th class="text-right font-semibold p-3 border-r">Screen Size</td>
-                <td class="text-left p-3">11"</td>
-            </tr>
-            <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
-                <th class="text-right font-semibold p-3 border-r">Warranty</td>
-                <td class="text-left p-3">1 Year Manufacturer</td>
-            </tr>
-            <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
-                <th class="text-right font-semibold p-3 border-r">4G</td>
-                <td class="text-left p-3">No</td>
-            </tr>
-            <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
-                <th class="text-right font-semibold p-3 border-r">Internal Memory</td>
-                <td class="text-left p-3">2TB</td>
-            </tr>
-            <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
-                <th class="text-right font-semibold p-3 border-r">Retina</td>
-                <td class="text-left p-3">Yes</td>
-            </tr>
-        </table>
-        <!-- product details -->
-        <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Product Details</p>
-        <div class="text-sm space-y-4">
-            <h3 class="font-semibold text-base">Features:</h3>
-            <div class="space-y-1">
-                <h3 class="font-semibold">Meet the redesigned iPad:</h3>
-                <p>The all-new iPad is colorfully reimagined to be more capable, more intuitive, and even more fun. With
-                    a new all‑screen design, 10.9-inch Liquid Retina display, and four gorgeous colors, iPad delivers a
-                    powerful way to get things done, create, and stay connected.1 Add on essential accessories designed
-                    just for iPad and enjoy endless versatility for everything you love to do.</p>
-            </div>
-            <div class="space-y-1">
-                <h3 class="font-semibold">Make quick work of your work:</h3>
-                <p>Get things done all on one device. Take notes, collaborate, and work seamlessly between apps. From
-                    pie charts to pie recipes, iPad is designed for all kinds of productivity.</p>
-            </div>
-            <div class="space-y-1">
-                <h3 class="font-semibold">Create to your heart’s content:</h3>
-                <p>Express yourself, draw, and brainstorm on a flexible creative powerhouse. The stunning 10.9-inch
-                    Liquid Retina display makes an incredible canvas. So you can doodle, take notes, mark up documents,
-                    and a lot more with Apple Pencil.</p>
-            </div>
-        </div>
-        <!-- reviews -->
-        <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3" id="reviews">Product Reviews</p>
-        <div class="space-y-4 text-sm">
-            <!-- sorting -->
-            <div class="flex justify-between items-center">
-                <div class="flex flex-col space-y-1 font-semibold px-3 text-slate-900">
-                    <p><span class="text-cyan-600 underline cursor-pointer">4</span> Reviews</p>
-                    <span class="opacity-70 hidden">/</span>
-                    <p><span class="text-cyan-600 underline cursor-pointer">3.0</span> Rating</p>
+        <!-- info container -->
+        <div class="m-6 space-y-5 lg:gap-6 lg:col-span-2 lg:row-span-2 xl:col-span-3 xl:grid xl:grid-cols-2 xl:gap-8">
+            <div class="space-y-5 my-12">
+                <!-- price -->
+                <div>
+                    <p class="old-price line-through text-sm opacity-70">Rs. 4,500</p>
+                    <p class="new-price font-medium text-2xl">Rs. 3,400</p>
                 </div>
-                <div class="flex items-center space-x-2">
-                    <p>Sort By:</p>
-                    <select name="sort" id="sort" class="outline-none border p-1 cursor-pointer">
-                        <option value="new">Recent</option>
-                        <option value="top" selected>Top Rating</option>
-                        <option value="low">Low Rating</option>
-                    </select>
+                <!-- rating -->
+                <div class="flex space-x-2 items-center">
+                    <h4 class="font-semibold text-sm">Rating:</h4>
+                    <div class="flex space-x-1">
+                        <img src="images/rate star.png" class="w-5 h-5">
+                        <img src="images/rate star.png" class="w-5 h-5">
+                        <img src="images/rate star.png" class="w-5 h-5">
+                        <img src="images/empty star.png" class="w-5 h-5">
+                        <img src="images/empty star.png" class="w-5 h-5">
+                    </div>
+                    <a href="#reviews" class="underline text-cyan-600">4 reviews</a>
+                </div>
+                <!-- buttons -->
+                <div class="grid grid-cols-2 text-white gap-1">
+                    <button class="bg-cyan-400 transition-all hover:bg-cyan-500 active:bg-cyan-900 py-3">Buy
+                        Now</button>
+                    <button class="bg-red-600 transition-all hover:bg-red-700 active:bg-red-900 py-3">Add To Cart
+                    </button>
+                </div>
+                <!-- product category -->
+                <div>
+                    <span>Categories:</span>
+                    <a href="/" class="text-cyan-600 font-medium underline hover:text-cyan-700">Electronic</a>
+                    <a href="/" class="text-cyan-600 font-medium underline hover:text-cyan-700">Ipad</a>
                 </div>
             </div>
-            <!-- review -->
-            <div class="rating border p-4 space-y-2 border-b-0 last:border-b">
-                <div class="flex justify-between text-sm">
-                    <div class="flex items-center space-x-2">
-                        <h4 class="font-semibold">John Doe</h4>
-                        <div class="flex space-x-1">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/empty star.png" class="w-4 h-4">
-                            <img src="images/empty star.png" class="w-4 h-4">
+            <!-- delivery -->
+            <div class="space-y-5">
+                <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Delivery</p>
+                <div class="border p-4 space-y-5">
+                    <div class="text-sm space-y-2">
+                        <h4 class="font-semibold"><i class="fa fa-truck text-red-800"></i> Delivery Charges:</h4>
+                        <div class="space-y-1">
+                            <p>Rs. 400 (Within Multan)</p>
+                            <p>Rs. 700 (Other Cities)</p>
                         </div>
                     </div>
-                    <p>Mar 3,2024</p>
-                </div>
-                <div class="text-xs">
-                    <p>frankly speaking i was thinking that they will send some fake or faulty thing at this price…but
-                        they send what is written on the web..1000% perfect…but from this link….it’s very economical as
-                        compare to other offer</p>
-                </div>
-            </div>
-            <!-- review -->
-            <div class="rating border p-4 space-y-2 border-b-0 last:border-b">
-                <div class="flex justify-between text-sm">
-                    <div class="flex items-center space-x-2">
-                        <h4 class="font-semibold">John Doe</h4>
-                        <div class="flex space-x-1">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/empty star.png" class="w-4 h-4">
-                            <img src="images/empty star.png" class="w-4 h-4">
+                    <hr>
+                    <div class="text-sm space-y-2">
+                        <h4 class="font-semibold"><i class="fa fa-wallet text-amber-950"></i> Payment Methods:</h4>
+                        <div class="space-y-1">
+                            <p>JazzCash</p>
+                            <p>EasyPaisa</p>
+                            <p>PayPak</p>
+                            <p>Cash On Delivery</p>
                         </div>
                     </div>
-                    <p>Mar 3,2024</p>
-                </div>
-                <div class="text-xs">
-                    <p>frankly speaking i was thinking that they will send some fake or faulty thing at this price…but
-                        they send what is written on the web..1000% perfect…but from this link….it’s very economical as
-                        compare to other offer</p>
-                </div>
-            </div>
-            <!-- review -->
-            <div class="rating border p-4 space-y-2 border-b-0 last:border-b">
-                <div class="flex justify-between text-sm">
-                    <div class="flex items-center space-x-2">
-                        <h4 class="font-semibold">John Doe</h4>
-                        <div class="flex space-x-1">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/empty star.png" class="w-4 h-4">
-                            <img src="images/empty star.png" class="w-4 h-4">
+                    <hr>
+                    <div class="text-sm space-y-2">
+                        <h4 class="font-semibold"><i class="fa fa-thumbs-up text-green-700"></i> Our Advantages:</h4>
+                        <div class="space-y-1">
+                            <p>100% Genuine Guaranteed Products</p>
+                            <p>Warranty Policy</p>
+                            <p>Different payment methods</p>
+                            <p>Best price</p>
                         </div>
                     </div>
-                    <p>Mar 3,2024</p>
-                </div>
-                <div class="text-xs">
-                    <p>frankly speaking i was thinking that they will send some fake or faulty thing at this price…but
-                        they send what is written on the web..1000% perfect…but from this link….it’s very economical as
-                        compare to other offer</p>
                 </div>
             </div>
-            <!-- review -->
-            <div class="rating border p-4 space-y-2 border-b-0 last:border-b">
-                <div class="flex justify-between text-sm">
-                    <div class="flex items-center space-x-2">
-                        <h4 class="font-semibold">John Doe</h4>
-                        <div class="flex space-x-1">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/rate star.png" class="w-4 h-4">
-                            <img src="images/empty star.png" class="w-4 h-4">
-                            <img src="images/empty star.png" class="w-4 h-4">
+            <!-- product information -->
+            <div class="space-y-5 col-span-2">
+                <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">More Information</p>
+                <table class="space-y-2 w-full">
+                    <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
+                        <th class="text-right font-semibold p-3 border-r">Product Code</td>
+                        <td class="text-left p-3">12874619</td>
+                    </tr>
+                    <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
+                        <th class="text-right font-semibold p-3 border-r">Brand</td>
+                        <td class="text-left p-3">Apple</td>
+                    </tr>
+                    <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
+                        <th class="text-right font-semibold p-3 border-r">Screen Size</td>
+                        <td class="text-left p-3">11"</td>
+                    </tr>
+                    <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
+                        <th class="text-right font-semibold p-3 border-r">Warranty</td>
+                        <td class="text-left p-3">1 Year Manufacturer</td>
+                    </tr>
+                    <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
+                        <th class="text-right font-semibold p-3 border-r">4G</td>
+                        <td class="text-left p-3">No</td>
+                    </tr>
+                    <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
+                        <th class="text-right font-semibold p-3 border-r">Internal Memory</td>
+                        <td class="text-left p-3">2TB</td>
+                    </tr>
+                    <tr class="grid grid-cols-2 text-sm border-b last:border-b-0">
+                        <th class="text-right font-semibold p-3 border-r">Retina</td>
+                        <td class="text-left p-3">Yes</td>
+                    </tr>
+                </table>
+            </div>
+            <!-- product details -->
+            <div class="space-y-5 col-span-2">
+                <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Product Details</p>
+                <div class="text-sm space-y-4 border p-4">
+                    <h3 class="font-semibold text-lg">Features:</h3>
+                    <div class="space-y-1">
+                        <h3 class="font-semibold">Meet the redesigned iPad:</h3>
+                        <p>The all-new iPad is colorfully reimagined to be more capable, more intuitive, and even more
+                            fun.
+                            With
+                            a new all‑screen design, 10.9-inch Liquid Retina display, and four gorgeous colors, iPad
+                            delivers a
+                            powerful way to get things done, create, and stay connected.1 Add on essential accessories
+                            designed
+                            just for iPad and enjoy endless versatility for everything you love to do.</p>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-semibold">Make quick work of your work:</h3>
+                        <p>Get things done all on one device. Take notes, collaborate, and work seamlessly between apps.
+                            From
+                            pie charts to pie recipes, iPad is designed for all kinds of productivity.</p>
+                    </div>
+                    <div class="space-y-1">
+                        <h3 class="font-semibold">Create to your heart’s content:</h3>
+                        <p>Express yourself, draw, and brainstorm on a flexible creative powerhouse. The stunning
+                            10.9-inch
+                            Liquid Retina display makes an incredible canvas. So you can doodle, take notes, mark up
+                            documents,
+                            and a lot more with Apple Pencil.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- reviews -->
+            <div class="space-y-5 col-span-2">
+                <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3" id="reviews">Product Reviews</p>
+                <div class="space-y-4 text-sm">
+                    <!-- sorting -->
+                    <div class="flex justify-between items-center">
+                        <div
+                            class="flex flex-col space-y-1 font-semibold px-3 text-slate-900 lg:flex-row lg:space-y-0 lg:space-x-2">
+                            <p><span class="text-cyan-600 underline cursor-pointer">4</span> Reviews</p>
+                            <span class="opacity-70 hidden lg:block">/</span>
+                            <p><span class="text-cyan-600 underline cursor-pointer">3.0</span> Rating</p>
+                        </div>
+                        <div class="flex items-center space-x-2">
+                            <p>Sort By:</p>
+                            <select name="sort" id="sort" class="outline-none border p-1 cursor-pointer">
+                                <option value="new">Recent</option>
+                                <option value="top" selected>Top Rating</option>
+                                <option value="low">Low Rating</option>
+                            </select>
                         </div>
                     </div>
-                    <p>Mar 3,2024</p>
+                    <!-- review -->
+                    <div class="rating border p-4 space-y-2 border-b-0 last:border-b">
+                        <div class="flex justify-between text-sm">
+                            <div class="flex items-center space-x-2">
+                                <h4 class="font-semibold">John Doe</h4>
+                                <div class="flex space-x-1">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/empty star.png" class="w-4 h-4">
+                                    <img src="images/empty star.png" class="w-4 h-4">
+                                </div>
+                            </div>
+                            <p>Mar 3,2024</p>
+                        </div>
+                        <div class="text-xs">
+                            <p>frankly speaking i was thinking that they will send some fake or faulty thing at this
+                                price…but
+                                they send what is written on the web..1000% perfect…but from this link….it’s very
+                                economical
+                                as
+                                compare to other offer</p>
+                        </div>
+                    </div>
+                    <!-- review -->
+                    <div class="rating border p-4 space-y-2 border-b-0 last:border-b">
+                        <div class="flex justify-between text-sm">
+                            <div class="flex items-center space-x-2">
+                                <h4 class="font-semibold">John Doe</h4>
+                                <div class="flex space-x-1">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/empty star.png" class="w-4 h-4">
+                                    <img src="images/empty star.png" class="w-4 h-4">
+                                </div>
+                            </div>
+                            <p>Mar 3,2024</p>
+                        </div>
+                        <div class="text-xs">
+                            <p>frankly speaking i was thinking that they will send some fake or faulty thing at this
+                                price…but
+                                they send what is written on the web..1000% perfect…but from this link….it’s very
+                                economical
+                                as
+                                compare to other offer</p>
+                        </div>
+                    </div>
+                    <!-- review -->
+                    <div class="rating border p-4 space-y-2 border-b-0 last:border-b">
+                        <div class="flex justify-between text-sm">
+                            <div class="flex items-center space-x-2">
+                                <h4 class="font-semibold">John Doe</h4>
+                                <div class="flex space-x-1">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/empty star.png" class="w-4 h-4">
+                                    <img src="images/empty star.png" class="w-4 h-4">
+                                </div>
+                            </div>
+                            <p>Mar 3,2024</p>
+                        </div>
+                        <div class="text-xs">
+                            <p>frankly speaking i was thinking that they will send some fake or faulty thing at this
+                                price…but
+                                they send what is written on the web..1000% perfect…but from this link….it’s very
+                                economical
+                                as
+                                compare to other offer</p>
+                        </div>
+                    </div>
+                    <!-- review -->
+                    <div class="rating border p-4 space-y-2 border-b-0 last:border-b">
+                        <div class="flex justify-between text-sm">
+                            <div class="flex items-center space-x-2">
+                                <h4 class="font-semibold">John Doe</h4>
+                                <div class="flex space-x-1">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/rate star.png" class="w-4 h-4">
+                                    <img src="images/empty star.png" class="w-4 h-4">
+                                    <img src="images/empty star.png" class="w-4 h-4">
+                                </div>
+                            </div>
+                            <p>Mar 3,2024</p>
+                        </div>
+                        <div class="text-xs">
+                            <p>frankly speaking i was thinking that they will send some fake or faulty thing at this
+                                price…but
+                                they send what is written on the web..1000% perfect…but from this link….it’s very
+                                economical
+                                as
+                                compare to other offer</p>
+                        </div>
+                    </div>
                 </div>
-                <div class="text-xs">
-                    <p>frankly speaking i was thinking that they will send some fake or faulty thing at this price…but
-                        they send what is written on the web..1000% perfect…but from this link….it’s very economical as
-                        compare to other offer</p>
+            </div>
+        </div>
+        <div class="mx-5 mr-0">
+            <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Related Products</p>
+            <div class="products grid grid-cols-1 gap-5 py-5">
+                <!-- product container -->
+                <div class="bg-gray-100 p-6 space-y-5">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-40">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute left-1/2 -translate-x-1/2 max-h-40">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 left-1/2 -translate-x-1/2 max-h-40">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </div>
+
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
+                    </div>
+                </div>
+                <!-- product container -->
+                <div class="bg-gray-100 p-6 space-y-5">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-40">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute left-1/2 -translate-x-1/2 max-h-40">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 left-1/2 -translate-x-1/2 max-h-40">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </div>
+
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
+                    </div>
+                </div>
+                <!-- product container -->
+                <div class="bg-gray-100 p-6 space-y-5">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-40">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute left-1/2 -translate-x-1/2 max-h-40">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 left-1/2 -translate-x-1/2 max-h-40">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </div>
+
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>
@@ -456,12 +605,6 @@
 
     <script src="side/script.js"></script>
     <script src="side/flowbite.js"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script> -->
 </body>
 
 </html>
