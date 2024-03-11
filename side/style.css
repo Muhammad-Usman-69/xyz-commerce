@@ -698,12 +698,21 @@ video {
   margin-bottom: 1rem;
 }
 
+.mx-4 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
 .mr-0 {
   margin-right: 0px;
 }
 
 .mt-auto {
   margin-top: auto;
+}
+
+.mt-0 {
+  margin-top: 0px;
 }
 
 .block {
@@ -856,6 +865,14 @@ video {
 
 .cursor-pointer {
   cursor: pointer;
+}
+
+.list-outside {
+  list-style-position: outside;
+}
+
+.list-decimal {
+  list-style-type: decimal;
 }
 
 .grid-cols-1 {
@@ -1665,6 +1682,24 @@ video {
   background-color: #000
 }
 
+.marker\:text-lg *::marker {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.marker\:font-bold *::marker {
+  font-weight: 700;
+}
+
+.marker\:text-lg::marker {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.marker\:font-bold::marker {
+  font-weight: 700;
+}
+
 .placeholder\:italic::-moz-placeholder {
   font-style: italic;
 }
@@ -1846,6 +1881,10 @@ video {
 }
 
 @media (min-width: 640px) {
+  .sm\:m-6 {
+    margin: 1.5rem;
+  }
+
   .sm\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -1854,6 +1893,10 @@ video {
   .sm\:my-6 {
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
+  }
+
+  .sm\:mt-0 {
+    margin-top: 0px;
   }
 
   .sm\:grid-cols-1 {
@@ -1910,6 +1953,10 @@ video {
     grid-row: span 2 / span 2;
   }
 
+  .lg\:m-8 {
+    margin: 2rem;
+  }
+
   .lg\:mx-12 {
     margin-left: 3rem;
     margin-right: 3rem;
@@ -1923,6 +1970,10 @@ video {
   .lg\:my-8 {
     margin-top: 2rem;
     margin-bottom: 2rem;
+  }
+
+  .lg\:mt-0 {
+    margin-top: 0px;
   }
 
   .lg\:block {
