@@ -7,10 +7,13 @@ module.exports = {
     extend: {
       maxHeight: {
         '31': '7.75rem',
-        '34': '8.5rem'
+        '34': '8.5rem',
+        '18': '4.5rem'
       },
       minHeight: {
-        '34': '8.5rem'
+        '31': '7.75rem',
+        '34': '8.5rem',
+        '18': '4.5rem'
       }
     },
   },

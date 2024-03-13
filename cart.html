@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="side/style.css" rel="stylesheet">
     <link rel="shortcut icon" href="images/logo.jfif" type="image/x-icon">
-    <title>Category - Ecommerce Pakistan</title>
+    <title>Shopping Cart - XYZ - Ecommerce Pakistan</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
@@ -15,7 +15,7 @@
 
 <body class="open-sans bg-gray-50 flex flex-col min-h-screen">
     <!-- header -->
-    <header class="min-h-31">
+    <header class="min-h-31 lg:min-h-18 lg:max-h-18">
         <nav
             class="bg-white max-h-31 w-full z-10 grid grid-cols-[130px_1fr] justify-between items-center transition-all duration-300 lg:grid-cols-[130px_1fr_1fr]">
             <!-- main -->
@@ -28,11 +28,11 @@
             <!-- side pages -->
             <div class="flex space-x-4 justify-end pr-5 py-2 lg:justify-start lg:mx-6">
                 <a class="after:content-[''] after:block after:border-b-blue-950 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
-                    href="">Home</a>
+                    href="/">Home</a>
                 <a class="after:content-[''] after:block after:border-b-blue-950 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
-                    href="">Contact</a>
+                    href="#contact">Contact</a>
                 <a class="after:content-[''] after:block after:border-b-blue-950 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
-                    href="">FAQs</a>
+                    href="faq.html">FAQs</a>
             </div>
             <div
                 class="col-span-2 bg-blue-950 flex justify-center items-center space-x-4 lg:col-span-1 lg:bg-transparent">
@@ -62,7 +62,7 @@
                 class="h-9 absolute left-0 bg-blue-950 transition-all duration-200 hover:bg-yellow-400 active:bg-yellow-500 border-gray-700 border-r cursor-pointer p-1">
         </div>
         <div class="flex scroll-container overflow-x-scroll no-scrollbar">
-            <a href="/"
+            <a href="category.html"
                 class="p-2 text-sm text-white bg-blue-950 transition-all duration-200 hover:bg-yellow-400 hover:text-black border-gray-700 border-r last:border-r-0">Gaming</a>
             <a href="/"
                 class="p-2 text-sm text-white bg-blue-950 transition-all duration-200 hover:bg-yellow-400 hover:text-black border-gray-700 border-r last:border-r-0">Groceries</a>
@@ -90,145 +90,139 @@
                 class="h-9 absolute right-0 bg-blue-950 transition-all duration-200 hover:bg-yellow-400 active:bg-yellow-500 border-gray-700 border-l cursor-pointer p-1">
         </div>
     </div>
-    <div class="m-5 space-y-5">
+    <!-- cart container -->
+    <div class="m-5">
         <!-- breadcrumb -->
-        <div class="p-3 text-sm border">
+        <div class="p-3 text-sm border mb-5">
             <p class="space-x-3">
                 <a href="/" class="text-cyan-600 font-bold underline">Home</a>
                 <span class="opacity-70">/</span>
-                <a href="/" class="text-red-600 font-bold underline">Ipad</a>
+                <a href="/" class="text-red-600 font-bold underline">Cart</a>
             </p>
         </div>
-        <!-- sorting & results -->
-        <div class="flex items-center justify-between">
-            <!-- sorting -->
-            <div class="flex items-center space-x-2">
-                <p>Sort By:</p>
-                <select name="sort" id="sort" class="outline-none border p-1 cursor-pointer">
-                    <option value="rel" selected>Relevance</option>
-                    <option value="asc">Low To High</option>
-                    <option value="des">High To Low</option>
-                </select>
+        <div class="space-y-5 lg:grid lg:grid-cols-3 lg:gap-5 lg:space-y-0">
+            <div class="lg:col-span-2">
+                <!-- cart title-->
+                <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Cart</p>
+                <!-- cart -->
+                <div>
+                    <!-- product -->
+                    <div class="item flex items-center p-3 border-b border-x space-x-1">
+                        <!-- product selector -->
+                        <input type="checkbox" name="item1" id="item1" class="select">
+                        <!-- product img -->
+                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                            class="max-h-20 max-w-20">
+                        <!-- product info -->
+                        <div class="space-y-1 flex flex-col w-full">
+                            <!-- product title -->
+                            <a href="product.html" class="text-sm">Apple iPad 9th Generation 10.2″ (Wi-Fi, 64GB) – Space
+                                Gray</a>
+                            <!-- product quantity and price -->
+                            <div class="flex justify-between items-center">
+                                <!-- price -->
+                                <div>
+                                    <p class="text-xs line-through opacity-70">Rs. <span class="old-price">4500</span></p>
+                                    <p class="new-price font-semibold text-red-600">Rs. <span class="price">3400</span></p>
+                                </div>
+                                <!-- quantity -->
+                                <div class="quantity flex items-center space-x-2 py-2 text-white">
+                                    <button type="button"
+                                        class="minus bg-blue-950 text-yellow-400 w-8 h-8 active:bg-blue-900 text-xl">&minus;</button>
+                                    <p class="product-quantity text-black">1</p>
+                                    <button type="button"
+                                        class="plus bg-blue-950 text-yellow-400 w-8 h-8 active:bg-blue-900 text-xl">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- product -->
+                    <div class="item flex items-center p-3 border-b border-x space-x-1">
+                        <!-- product selector -->
+                        <input type="checkbox" name="item1" id="item1" class="select">
+                        <!-- product img -->
+                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                            class="max-h-20 max-w-20">
+                        <!-- product info -->
+                        <div class="space-y-1 flex flex-col w-full">
+                            <!-- product title -->
+                            <a href="product.html" class="text-sm">Apple iPad 9th Generation 10.2″ (Wi-Fi, 64GB) – Space
+                                Gray</a>
+                            <!-- product quantity and price -->
+                            <div class="flex justify-between items-center">
+                                <!-- price -->
+                                <div>
+                                    <p class="text-xs line-through opacity-70">Rs. <span class="old-price">4500</span></p>
+                                    <p class="new-price font-semibold text-red-600">Rs. <span class="price">3400</span></p>
+                                </div>
+                                <!-- quantity -->
+                                <div class="quantity flex items-center space-x-2 py-2 text-white">
+                                    <button type="button"
+                                        class="minus bg-blue-950 text-yellow-400 w-8 h-8 active:bg-blue-900 text-xl">&minus;</button>
+                                    <p class="product-quantity text-black">1</p>
+                                    <button type="button"
+                                        class="plus bg-blue-950 text-yellow-400 w-8 h-8 active:bg-blue-900 text-xl">&plus;</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <!-- results -->
-            <div class="flex space-x-1">
-                <h4 class="font-semibold">3</h4>
-                <span>Results Found</span>
+            <!-- checkout -->
+            <div>
+                <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Checkout</p>
+                <div class="p-4 border space-y-3">
+                    <!-- delivery place -->
+                    <h3 class="font-semibold"><i class="fa fa-truck text-yellow-500"></i> Delivery</h3>
+                    <form action="" class="text-sm space-y-1">
+                        <div>
+                            <input type="radio" name="delivery" id="in" class="delivery" value="400" oninput="updateTotal()">
+                            <label for="in">Rs. 400 (Within Multan)</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="delivery" id="out" class="delivery" value="700" oninput="updateTotal()">
+                            <label for="out">Rs. 700 (Other Cities)</label>
+                        </div>
+                    </form>
+                    <hr>
+                    <!-- payment method -->
+                    <h3 class="font-semibold"><i class="fa fa-wallet text-amber-950"></i> Payment Method</h3>
+                    <form action="" class="text-sm space-y-1">
+                        <div>
+                            <input type="radio" name="method" id="jc" value="JazzCash">
+                            <label for="jc">JazzCash</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="method" id="ep" value="EasyPaisa">
+                            <label for="ep">EasyPaisa</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="method" id="pp" value="PayPak">
+                            <label for="pp">PayPak</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="method" id="cod" value="CashOnDelivery">
+                            <label for="cod">Cash On Delivery</label>
+                        </div>
+                    </form>
+                    <hr>
+                    <!-- price -->
+                    <div class="space-y-1">
+                        <p><span class="font-semibold">Delivery:</span> Rs. <span class="delivery-price">0</span></p>
+                        <p><span class="font-semibold">Total:</span> Rs. <span class="total">0</span></p>
+                        <p><span class="font-semibold">Discount:</span> Rs. <span class="discount">0</span></p>
+                    </div>
+                    <hr>
+                    <!-- checkout -->
+                    <button
+                        class="w-full bg-blue-950 transition-all duration-200 text-yellow-300 text-sm hover:bg-gray-800 active:bg-slate-900 py-2">Proceed
+                        To Checkout (<span class="totalItem">0</span>)</button>
+
+                </div>
             </div>
         </div>
     </div>
-    <div
-        class="products grid grid-cols-1 m-5 mt-0 sm:mt-0 sm:m-6 lg:m-8 lg:mt-0 gap-4 sm:grid-cols-2 sm:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-10 xl:grid-cols-5 xl:gap-16">
-        <!-- product container -->
-        <div class="bg-gray-100 p-6 space-y-5">
-            <!-- img container -->
-            <div class="relative cursor-pointer group/img">
-                <div class="min-h-34">
-                    <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                        class="transition-all group-hover/img:opacity-0 absolute left-1/2 -translate-x-1/2 max-h-34">
-                    <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                        class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 left-1/2 -translate-x-1/2 max-h-34">
-                </div>
-                <!-- tag -->
-                <div
-                    class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                    <span class="">-24%</span>
-                </div>
-            </div>
-
-            <!-- text container -->
-            <div class="col-span-2 space-y-2 relative">
-                <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                    (Wi-Fi, 64GB) – Space Gray</a>
-                <div>
-                    <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                    <span class="new-price font-semibold">Rs 3,400</span>
-                </div>
-                <button type="button"
-                    class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                    DETAILS</button>
-                <button class="group/heart">
-                    <img src="images/heart.png" alt=""
-                        class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                    <img src="images/red heart.png"
-                        class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                </button>
-            </div>
-        </div>
-        <!-- product container -->
-        <div class="bg-gray-100 p-6 space-y-5">
-            <!-- img container -->
-            <div class="relative cursor-pointer group/img">
-                <div class="min-h-34">
-                    <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                        class="transition-all group-hover/img:opacity-0 absolute left-1/2 -translate-x-1/2 max-h-34">
-                    <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                        class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 left-1/2 -translate-x-1/2 max-h-34">
-                </div>
-                <!-- tag -->
-                <div
-                    class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                    <span class="">-24%</span>
-                </div>
-            </div>
-
-            <!-- text container -->
-            <div class="col-span-2 space-y-2 relative">
-                <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                    (Wi-Fi, 64GB) – Space Gray</a>
-                <div>
-                    <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                    <span class="new-price font-semibold">Rs 3,400</span>
-                </div>
-                <button type="button"
-                    class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                    DETAILS</button>
-                <button class="group/heart">
-                    <img src="images/heart.png" alt=""
-                        class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                    <img src="images/red heart.png"
-                        class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                </button>
-            </div>
-        </div>
-        <!-- product container -->
-        <div class="bg-gray-100 p-6 space-y-5">
-            <!-- img container -->
-            <div class="relative cursor-pointer group/img">
-                <div class="min-h-34">
-                    <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                        class="transition-all group-hover/img:opacity-0 absolute left-1/2 -translate-x-1/2 max-h-34">
-                    <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                        class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 left-1/2 -translate-x-1/2 max-h-34">
-                </div>
-                <!-- tag -->
-                <div
-                    class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                    <span class="">-24%</span>
-                </div>
-            </div>
-
-            <!-- text container -->
-            <div class="col-span-2 space-y-2 relative">
-                <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                    (Wi-Fi, 64GB) – Space Gray</a>
-                <div>
-                    <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                    <span class="new-price font-semibold">Rs 3,400</span>
-                </div>
-                <button type="button"
-                    class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                    DETAILS</button>
-                <button class="group/heart">
-                    <img src="images/heart.png" alt=""
-                        class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                    <img src="images/red heart.png"
-                        class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                </button>
-            </div>
-        </div>
-    </div>
-
+    <!-- footer -->
     <footer class="bg-blue-950 mt-auto">
         <!-- social email -->
         <div class="py-5 grid gap-4">
@@ -278,7 +272,7 @@
             </div>
             <hr class="mx-5 md:hidden">
             <!-- contact -->
-            <div class="px-5 py-5 text-white">
+            <div class="px-5 py-5 text-white" id="contact">
                 <p class="font-semibold text-lg">CONTACT US</p>
                 <div class="py-3 space-y-2">
                     <div class="flex items-center space-x-2">
@@ -304,6 +298,7 @@
         </div>
     </footer>
 
+    <script src="side/cart.js"></script>
     <script src="side/script.js"></script>
 </body>
 

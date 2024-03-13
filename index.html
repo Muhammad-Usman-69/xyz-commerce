@@ -15,7 +15,7 @@
 
 <body class="open-sans bg-gray-50 flex flex-col min-h-screen">
     <!-- header -->
-    <header>
+    <header class="min-h-31 lg:min-h-18 lg:max-h-18">
         <nav
             class="bg-white max-h-31 w-full z-10 grid grid-cols-[130px_1fr] justify-between items-center transition-all duration-300 lg:grid-cols-[130px_1fr_1fr]">
             <!-- main -->
@@ -34,9 +34,11 @@
                 <a class="after:content-[''] after:block after:border-b-blue-950 after:transition-all after:duration-200 after:border-b-2 after:scale-0 hover:after:scale-100"
                     href="faq.html">FAQs</a>
             </div>
-            <div class="col-span-2 bg-blue-950 flex justify-center items-center space-x-4 lg:col-span-1 lg:bg-transparent">
+            <div
+                class="col-span-2 bg-blue-950 flex justify-center items-center space-x-4 lg:col-span-1 lg:bg-transparent">
                 <!-- search -->
-                <form action="search.html" class="flex items-center justify-center py-2 rounded-sm text-sm lg:py-0 lg:border-2">
+                <form action="search.html"
+                    class="flex items-center justify-center py-2 rounded-sm text-sm lg:py-0 lg:border-2">
                     <input type="search" name="q" id="q" placeholder="Search anything you like..."
                         class="outline-none text-black border-none px-2 py-2 w-48 placeholder:italic"
                         autocomplete="off">
@@ -44,7 +46,7 @@
                         class="bg-yellow-400 cursor-pointer px-2 py-2 hover:bg-yellow-300 active:bg-yellow-500">
                 </form>
                 <!-- account cart -->
-                <a href="/">
+                <a href="cart.html">
                     <img src="images/shopping-cart.png" class="w-7">
                 </a>
                 <a href="/">
@@ -115,346 +117,350 @@
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </button>
     </div>
-    <!-- featured product -->
-    <div class="m-3 sm:mx-10 sm:my-6 lg:mx-12 lg:my-8 xl:mx-16 xl:my-12">
-        <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Featured Products</p>
-        <div
-            class="products grid grid-cols-1 gap-4 py-4 sm:py-5 md:py-6 lg:py-8 sm:grid-cols-2 sm:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-10 xl:grid-cols-5 xl:gap-16">
-            <!-- product container -->
-            <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
-                <!-- img container -->
-                <div class="relative cursor-pointer group/img">
-                    <div class="min-h-34">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                            class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                            class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
-                    </div>
-                    <!-- tag -->
-                    <div
-                        class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                        <span class="">-24%</span>
+    <!-- products -->
+    <div class="sm:mx-10 sm:my-6 lg:mx-12 lg:my-8 xl:mx-16 xl:my-12">
+        <!-- featured product -->
+        <div>
+            <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Featured Products</p>
+            <div
+                class="products grid grid-cols-1 gap-4 py-4 sm:py-5 md:py-6 lg:py-8 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 lg:gap-6 xl:grid-cols-5 xl:gap-10">
+                <!-- product container -->
+                <div class="bg-gray-100 p-4 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
+                    <!-- img container -->
+                    <a href="product.html" class="relative cursor-pointer group/img">
+                        <div class="min-h-34">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </a>
+
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="product.html" class="font-semibold text-justify text-slate-900">Apple iPad 9th
+                            Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
                     </div>
                 </div>
-
-                <!-- text container -->
-                <div class="col-span-2 space-y-2 relative">
-                    <a href="product.html" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                        (Wi-Fi, 64GB) – Space Gray</a>
-                    <div>
-                        <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                        <span class="new-price font-semibold">Rs 3,400</span>
+                <!-- product container -->
+                <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-34">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
                     </div>
-                    <button type="button"
-                        class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                        DETAILS</button>
-                    <button class="group/heart">
-                        <img src="images/heart.png" alt=""
-                            class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                        <img src="images/red heart.png"
-                            class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                    </button>
+
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
+                    </div>
+                </div>
+                <!-- product container -->
+                <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-34">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </div>
+
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
+                    </div>
+                </div>
+                <!-- product container -->
+                <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-34">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </div>
+
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
+                    </div>
+                </div>
+                <!-- product container -->
+                <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-34">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </div>
+
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
+                    </div>
+                </div>
+                <!-- product container -->
+                <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-34">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </div>
+
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
+                    </div>
                 </div>
             </div>
-            <!-- product container -->
-            <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
-                <!-- img container -->
-                <div class="relative cursor-pointer group/img">
-                    <div class="min-h-34">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                            class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                            class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
-                    </div>
-                    <!-- tag -->
-                    <div
-                        class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                        <span class="">-24%</span>
-                    </div>
-                </div>
-
-                <!-- text container -->
-                <div class="col-span-2 space-y-2 relative">
-                    <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                        (Wi-Fi, 64GB) – Space Gray</a>
-                    <div>
-                        <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                        <span class="new-price font-semibold">Rs 3,400</span>
-                    </div>
-                    <button type="button"
-                        class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                        DETAILS</button>
-                    <button class="group/heart">
-                        <img src="images/heart.png" alt=""
-                            class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                        <img src="images/red heart.png"
-                            class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                    </button>
-                </div>
-            </div>
-            <!-- product container -->
-            <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
-                <!-- img container -->
-                <div class="relative cursor-pointer group/img">
-                    <div class="min-h-34">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                            class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                            class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
-                    </div>
-                    <!-- tag -->
-                    <div
-                        class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                        <span class="">-24%</span>
-                    </div>
-                </div>
-
-                <!-- text container -->
-                <div class="col-span-2 space-y-2 relative">
-                    <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                        (Wi-Fi, 64GB) – Space Gray</a>
-                    <div>
-                        <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                        <span class="new-price font-semibold">Rs 3,400</span>
-                    </div>
-                    <button type="button"
-                        class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                        DETAILS</button>
-                    <button class="group/heart">
-                        <img src="images/heart.png" alt=""
-                            class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                        <img src="images/red heart.png"
-                            class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                    </button>
-                </div>
-            </div>
-            <!-- product container -->
-            <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
-                <!-- img container -->
-                <div class="relative cursor-pointer group/img">
-                    <div class="min-h-34">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                            class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                            class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
-                    </div>
-                    <!-- tag -->
-                    <div
-                        class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                        <span class="">-24%</span>
-                    </div>
-                </div>
-
-                <!-- text container -->
-                <div class="col-span-2 space-y-2 relative">
-                    <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                        (Wi-Fi, 64GB) – Space Gray</a>
-                    <div>
-                        <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                        <span class="new-price font-semibold">Rs 3,400</span>
-                    </div>
-                    <button type="button"
-                        class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                        DETAILS</button>
-                    <button class="group/heart">
-                        <img src="images/heart.png" alt=""
-                            class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                        <img src="images/red heart.png"
-                            class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                    </button>
-                </div>
-            </div>
-            <!-- product container -->
-            <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
-                <!-- img container -->
-                <div class="relative cursor-pointer group/img">
-                    <div class="min-h-34">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                            class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                            class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
-                    </div>
-                    <!-- tag -->
-                    <div
-                        class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                        <span class="">-24%</span>
-                    </div>
-                </div>
-
-                <!-- text container -->
-                <div class="col-span-2 space-y-2 relative">
-                    <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                        (Wi-Fi, 64GB) – Space Gray</a>
-                    <div>
-                        <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                        <span class="new-price font-semibold">Rs 3,400</span>
-                    </div>
-                    <button type="button"
-                        class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                        DETAILS</button>
-                    <button class="group/heart">
-                        <img src="images/heart.png" alt=""
-                            class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                        <img src="images/red heart.png"
-                            class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                    </button>
-                </div>
-            </div>
-            <!-- product container -->
-            <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
-                <!-- img container -->
-                <div class="relative cursor-pointer group/img">
-                    <div class="min-h-34">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                            class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                            class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
-                    </div>
-                    <!-- tag -->
-                    <div
-                        class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                        <span class="">-24%</span>
-                    </div>
-                </div>
-
-                <!-- text container -->
-                <div class="col-span-2 space-y-2 relative">
-                    <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                        (Wi-Fi, 64GB) – Space Gray</a>
-                    <div>
-                        <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                        <span class="new-price font-semibold">Rs 3,400</span>
-                    </div>
-                    <button type="button"
-                        class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                        DETAILS</button>
-                    <button class="group/heart">
-                        <img src="images/heart.png" alt=""
-                            class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                        <img src="images/red heart.png"
-                            class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                    </button>
-                </div>
-            </div>
-        </div>
-        <!-- <div class="py-5 grid place-items-center">
+            <!-- <div class="py-5 grid place-items-center">
         <button type="button"
             class="px-12 py-2 rounded-md bg-gradient-to-b border-2 text-yellow-400 from-cyan-900 to-cyan-950 hover:from-cyan-950 hover:to-cyan-900 active:from-blue-950 active:to-blue-900 text-sm">VIEW
             MORE</button>
     </div> -->
-    </div>
+        </div>
 
-    <!-- categories product -->
-    <div class="m-3 sm:mx-10 sm:my-6 lg:mx-12 lg:my-8 xl:mx-16 xl:my-12">
-        <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Ipad</p>
-        <div
-            class="category-products gap-4 grid grid-cols-1 py-4 sm:py-5 md:py-6 lg:py-8 sm:grid-cols-2 sm:gap-8 md:grid-cols-3 lg:grid-cols-4 lg:gap-10 xl:grid-cols-5 xl:gap-16">
-            <!-- product container -->
-            <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
-                <!-- img container -->
-                <div class="relative cursor-pointer group/img">
-                    <div class="min-h-34">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                            class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                            class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+        <!-- categories product -->
+        <div>
+            <p class="bg-gray-200 text-slate-900 font-bold text-lg p-3">Ipad</p>
+            <div
+                class="category-products gap-4 grid grid-cols-1 py-4 sm:py-5 md:py-6 lg:py-8 sm:grid-cols-2 sm:gap-6 md:grid-cols-3 lg:grid-cols-4 lg:gap-8 xl:grid-cols-5 xl:gap-10">
+                <!-- product container -->
+                <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-34">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
                     </div>
-                    <!-- tag -->
-                    <div
-                        class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                        <span class="">-24%</span>
-                    </div>
-                </div>
 
-                <!-- text container -->
-                <div class="col-span-2 space-y-2 relative">
-                    <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                        (Wi-Fi, 64GB) – Space Gray</a>
-                    <div>
-                        <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                        <span class="new-price font-semibold">Rs 3,400</span>
-                    </div>
-                    <button type="button"
-                        class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                        DETAILS</button>
-                    <button class="group/heart">
-                        <img src="images/heart.png" alt=""
-                            class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                        <img src="images/red heart.png"
-                            class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                    </button>
-                </div>
-            </div>
-            <!-- product container -->
-            <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
-                <!-- img container -->
-                <div class="relative cursor-pointer group/img">
-                    <div class="min-h-34">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                            class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                            class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
-                    </div>
-                    <!-- tag -->
-                    <div
-                        class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                        <span class="">-24%</span>
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
                     </div>
                 </div>
+                <!-- product container -->
+                <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-34">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </div>
 
-                <!-- text container -->
-                <div class="col-span-2 space-y-2 relative">
-                    <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                        (Wi-Fi, 64GB) – Space Gray</a>
-                    <div>
-                        <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                        <span class="new-price font-semibold">Rs 3,400</span>
-                    </div>
-                    <button type="button"
-                        class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                        DETAILS</button>
-                    <button class="group/heart">
-                        <img src="images/heart.png" alt=""
-                            class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                        <img src="images/red heart.png"
-                            class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                    </button>
-                </div>
-            </div>
-            <!-- product container -->
-            <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
-                <!-- img container -->
-                <div class="relative cursor-pointer group/img">
-                    <div class="min-h-34">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
-                            class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
-                        <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
-                            class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
-                    </div>
-                    <!-- tag -->
-                    <div
-                        class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
-                        <span class="">-24%</span>
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
                     </div>
                 </div>
+                <!-- product container -->
+                <div class="bg-gray-100 p-3 grid grid-cols-3 gap-2 last:border-b-0 sm:grid-cols-1">
+                    <!-- img container -->
+                    <div class="relative cursor-pointer group/img">
+                        <div class="min-h-34">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-1.jpg"
+                                class="transition-all group-hover/img:opacity-0 absolute max-h-34 left-1/2 -translate-x-1/2">
+                            <img src="product images/Apple-iPad-9th-Generation-10.2-Wi-Fi-64GB-Space-Gray-8.jpg"
+                                class="transition-all group-hover/img:opacity-100 absolute opacity-0 top-0 max-h-34 left-1/2 -translate-x-1/2">
+                        </div>
+                        <!-- tag -->
+                        <div
+                            class="w-10 h-10 absolute top-0 right-0 grid place-items-center text-sm rounded-full bg-red-500 text-white font-bold">
+                            <span class="">-24%</span>
+                        </div>
+                    </div>
 
-                <!-- text container -->
-                <div class="col-span-2 space-y-2 relative">
-                    <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
-                        (Wi-Fi, 64GB) – Space Gray</a>
-                    <div>
-                        <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
-                        <span class="new-price font-semibold">Rs 3,400</span>
+                    <!-- text container -->
+                    <div class="col-span-2 space-y-2 relative">
+                        <a href="/" class="font-semibold text-justify text-slate-900">Apple iPad 9th Generation 10.2″
+                            (Wi-Fi, 64GB) – Space Gray</a>
+                        <div>
+                            <span class="old-price text-xs line-through opacity-70">Rs 4,500</span>
+                            <span class="new-price font-semibold">Rs 3,400</span>
+                        </div>
+                        <button type="button"
+                            class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
+                            DETAILS</button>
+                        <button class="group/heart">
+                            <img src="images/heart.png" alt=""
+                                class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
+                            <img src="images/red heart.png"
+                                class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
+                        </button>
                     </div>
-                    <button type="button"
-                        class="rounded-sm bg-gradient-to-t from-blue-950 to-blue-900 text-sm text-white px-3 py-1.5 hover:from-cyan-950 hover:to-cyan-900 active:bg-gradient-to-b">VIEW
-                        DETAILS</button>
-                    <button class="group/heart">
-                        <img src="images/heart.png" alt=""
-                            class="absolute bottom-0 right-0  w-6 group-hover/heart:opacity-0">
-                        <img src="images/red heart.png"
-                            class="absolute bottom-0 right-0  w-6 opacity-0 group-hover/heart:opacity-100">
-                    </button>
                 </div>
             </div>
         </div>
